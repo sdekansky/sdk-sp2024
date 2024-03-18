@@ -51,17 +51,18 @@ header a:hover
 .slideshow-container {
   display: grid; 
   grid-template-columns: .75fr 4fr 1.1fr .2fr; 
-  grid-template-rows: 1fr 3fr 1fr .5fr; 
-  gap: 30px 30px;
+  grid-template-rows: .7fr 3fr 1fr .5fr; 
+  gap: 10px 10px;
 }
 
 .mySlides {
   grid-area: 2 / 2 / 3 / 3; 
   align-items: center;
   justify-self: center;
-  max-width: 1600px;
-  min-width: 650px;
-  min-height: 650px;
+  max-width: 800px;
+  min-width: 800px;
+  min-height: 550px;
+  max-height: 550px;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.397);
 }
@@ -70,7 +71,7 @@ header a:hover
 .mySlides img {
   height: 100%;
   width: 100%;
-  object-fit: cover; /* Resize the image to cover the container, while maintaining its aspect ratio */
+  object-fit: scale-down; /* Resize the image to cover the container, while maintaining its aspect ratio */
 }
 
 .text {
@@ -91,9 +92,10 @@ header a:hover
   grid-area: 2 / 3 / 3 / 4;
   align-self: center;
   justify-self: center;
-  width: 100%;
+  align-items: bottom;
+  width: 120%;
   color:#ffffff;
-  font-size: 1em;
+  font-size: 1.2em;
   background: rgba(39, 39, 39, 0.713);
   backdrop-filter: blur(20px);
   background-size: cover;
@@ -101,10 +103,8 @@ header a:hover
   padding: 30px;  
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.397);
   opacity: 100%;
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
-
-
 
 .numbertext {
   grid-area: 4 / 2 / 3 / 3;
